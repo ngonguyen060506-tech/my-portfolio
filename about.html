@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html style="color-scheme: dark">
+  <!-- docker -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Create and display personal portfolio with projects - a HTML example you can edit and run in your browser on JSFiddle.">
+    <meta name="keywords" content="online javascript editor, testing javascript online, online ide, online code editor, html, css, react, tailwind online editor">
+    <meta name="author" content="JSFiddle">
+    <meta name="copyright" content="share alike">
+    <meta name="ipc" content="VN">
+    
+
+    <link rel="canonical" href="https://jsfiddle.net/23ng9mp6/1/">
+
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="JSFiddle">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Create and display personal portfolio with projects">
+    <meta property="og:description" content="Create and display personal portfolio with projects - a HTML example you can edit and run in your browser on JSFiddle.">
+    <meta property="og:url" content="https://jsfiddle.net/23ng9mp6/1/">
+    <meta property="og:image" content="https://jsfiddle.net/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="JSFiddle - online code playground">
+
+      <meta property="article:published_time" content="2026-11-23T11:15:45Z">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Create and display personal portfolio with projects">
+    <meta name="twitter:description" content="Create and display personal portfolio with projects - a HTML example you can edit and run in your browser on JSFiddle.">
+    <meta name="twitter:image" content="https://jsfiddle.net/img/og-default.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#EFEFEF">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1E1F1F">
+
+    <script>document.documentElement.classList.add("hasJs")</script>
+
+    <link rel="stylesheet" href="https://jsfiddle.net/vite-dist/assets/dist-skeleton-DzkiO98c.css" />
+
+    <link rel="preconnect" href="//fiddle.jshell.net">
+    
+    
+    <style type="text/css">@font-face {font-family:'Inter';font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.2.8/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Inter';font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
+
+    
+
+
+    <script type="application/json" id="editor-bootstrap">{"config":{"shell":true,"paths":{"favorite":"/_make_favourite/","media":"/mooshellmedia/","render":"//fiddle.jshell.net/23ng9mp6/1/show/?editor_console=","saveSettings":"/_editor_options/","fork":"/_fork/","save":"/_save/","update":"/_update/23ng9mp6/","loadDependencies":"/_get_dependencies/{lib_id}/","showProfile":"/_show_profile/","fiddlePrivacy":"/fiddles/toggle-private/","customPage":"/fiddles/custom_page/","server":"https://jsfiddle.net","showServer":"https://fiddle.jshell.net"},"value":{"html":"\u003c!DOCTYPE html\u003e\r\n\u003chtml lang=\"vi\"\u003e\r\n\u003chead\u003e\r\n    \u003cmeta charset=\"UTF-8\"\u003e\r\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\r\n    \u003ctitle\u003eNgô Nguyễn Thị Nguyên Nguyên - Portfolio\u003c/title\u003e\r\n    \u003clink rel=\"stylesheet\" href=\"css/style.css\"\u003e\r\n\u003c/head\u003e\r\n\u003cbody\u003e\r\n    \u003cnav\u003e\r\n        \u003ca href=\"index.html\" class=\"logo\"\u003eMyPortfolio\u003c/a\u003e\r\n        \u003cdiv class=\"nav-links\"\u003e\r\n            \u003ca href=\"index.html\"\u003eTrang chủ\u003c/a\u003e\r\n            \u003ca href=\"about.html\"\u003eGiới thiệu\u003c/a\u003e\r\n            \u003ca href=\"contact.html\"\u003eLiên hệ\u003c/a\u003e\r\n        \u003c/div\u003e\r\n    \u003c/nav\u003e\r\n\r\n    \u003cheader\u003e\r\n        \u003cimg src=\"images/avatar.jpg\" alt=\"Ảnh chân dung cá nhân\" class=\"avatar\"\u003e\r\n        \u003ch1\u003eXin chào! Mình là Ngô Nguyễn Thị Nguyên Nguyên\u003c/h1\u003e\r\n        \u003cp\u003eFull-stack Developer tương lai\u003c/p\u003e\r\n    \u003c/header\u003e\r\n\r\n    \u003csection\u003e\r\n        \u003ch2\u003eDự án nổi bật\u003c/h2\u003e\r\n        \u003cdiv class=\"project\"\u003eTodo List JS\u003c/div\u003e\r\n        \u003cdiv class=\"project\"\u003eWeather App\u003c/div\u003e\r\n        \u003cdiv class=\"project\"\u003ePortfolio này :)\u003c/div\u003e\r\n    \u003c/section\u003e\r\n\r\n    \u003cscript src=\"js/script.js\"\u003e\u003c/script\u003e\r\n\u003c/body\u003e\r\n\u003c/html\u003e","js":"","css":""},"fiddle":{"version":1,"pastie_id":303160457,"slug":"23ng9mp6","boilerplate":false,"private":false},"languages":{"current":{"html":{"id":0,"name":"HTML","label":"HTML","monaco":"html","deprecated":false,"module":false},"js":{"id":0,"name":"JavaScript","label":"JavaScript","monaco":"javascript","deprecated":false,"module":true},"css":{"id":0,"name":"CSS","label":"CSS","monaco":"css","deprecated":false,"module":false}},"options":{"html":[{"id":0,"name":"HTML","label":"HTML","monaco":"html","deprecated":false,"module":false},{"id":2,"name":"Vue SFC","label":"Vue SFC","monaco":"html","deprecated":false,"module":true},{"id":3,"name":"Svelte","label":"Svelte","monaco":"html","deprecated":false,"module":true}],"js":[{"id":0,"name":"JavaScript","label":"JavaScript","monaco":"javascript","deprecated":false,"module":true},{"id":4,"name":"TypeScript","label":"TypeScript","monaco":"typescript","deprecated":false,"module":true},{"id":7,"name":"React","label":"React","monaco":"javascript","deprecated":false,"module":true},{"id":6,"name":"Vue","label":"Vue","monaco":"javascript","deprecated":false,"module":true},{"id":8,"name":"Preact","label":"Preact","monaco":"javascript","deprecated":false,"module":true},{"id":5,"name":"CoffeeScript 2","label":"CoffeeScript","monaco":"coffeescript","deprecated":false,"module":false},{"id":3,"name":"Babel + JSX","label":"Babel + JSX","monaco":"javascript","deprecated":false,"module":true},{"id":1,"name":"CoffeeScript","label":"CoffeeScript 1","monaco":"coffeescript","deprecated":true,"module":false},{"id":2,"name":"JavaScript 1.7","label":"JavaScript 1.7","monaco":"javascript","deprecated":true,"module":false}],"css":[{"id":0,"name":"CSS","label":"CSS","monaco":"css","deprecated":false,"module":false},{"id":6,"name":"Tailwind CSS","label":"Tailwind","monaco":"css","deprecated":false,"module":false},{"id":5,"name":"PostCSS (Stage 3+)","label":"PostCSS","monaco":"scss","deprecated":false,"module":false},{"id":1,"name":"SCSS","label":"SCSS","monaco":"scss","deprecated":false,"module":false},{"id":2,"name":"SASS","label":"SASS","monaco":"scss","deprecated":false,"module":false},{"id":4,"name":"PostCSS (Stage 0+)","label":"PostCSS (Stage 0+)","monaco":"scss","deprecated":true,"module":false}]}},"panelOptions":{"jsLibraries":[{"name":"Alpine.js","options":[{"id":409,"label":"Alpine.js 2.1.2","selected":false}]},{"name":"AngularJS","options":[{"id":137,"label":"AngularJS 1.1.1","selected":false},{"id":180,"label":"AngularJS 1.2.1","selected":false},{"id":283,"label":"AngularJS 1.4.8","selected":false},{"id":281,"label":"AngularJS 2.0.0-alpha.47","selected":false}]},{"name":"Bonsai","options":[{"id":120,"label":"Bonsai 0.4.1","selected":false}]},{"name":"Brick","options":[{"id":176,"label":"Brick edge","selected":false}]},{"name":"CreateJS","options":[{"id":170,"label":"CreateJS 2013.09.25","selected":false},{"id":279,"label":"CreateJS 2015.05.21","selected":false}]},{"name":"D3","options":[{"id":134,"label":"D3 3.x","selected":false},{"id":386,"label":"D3 4.13.0","selected":false},{"id":397,"label":"D3 5.9.2","selected":false}]},{"name":"Dojo","options":[{"id":87,"label":"Dojo (nightly)","selected":false},{"id":372,"label":"Dojo 1.4.8","selected":false},{"id":370,"label":"Dojo 1.5.6","selected":false},{"id":368,"label":"Dojo 1.6.5","selected":false},{"id":366,"label":"Dojo 1.7.12","selected":false},{"id":364,"label":"Dojo 1.8.14","selected":false},{"id":362,"label":"Dojo 1.9.11","selected":false},{"id":360,"label":"Dojo 1.10.8","selected":false},{"id":358,"label":"Dojo 1.11.4","selected":false},{"id":356,"label":"Dojo 1.12.2","selected":false}]},{"name":"Ember","options":[{"id":190,"label":"Ember (latest)","selected":false}]},{"name":"Enyo","options":[{"id":115,"label":"Enyo (nightly)","selected":false},{"id":116,"label":"Enyo 2.0.1","selected":false},{"id":121,"label":"Enyo 2.1","selected":false},{"id":145,"label":"Enyo 2.2.0","selected":false},{"id":214,"label":"Enyo 2.4.0","selected":false},{"id":238,"label":"Enyo 2.5.1","selected":false},{"id":299,"label":"Enyo 2.7.0","selected":false}]},{"name":"ExtJS","options":[{"id":23,"label":"ExtJS 3.1.0","selected":false},{"id":109,"label":"ExtJS 3.4.0","selected":false},{"id":107,"label":"ExtJS 4.1.0","selected":false},{"id":80,"label":"ExtJS 4.1.1","selected":false},{"id":147,"label":"ExtJS 4.2.0","selected":false},{"id":258,"label":"ExtJS 5.0.0","selected":false},{"id":256,"label":"ExtJS 5.1.0","selected":false},{"id":338,"label":"ExtJS 6.2.0","selected":false}]},{"name":"FabricJS","options":[{"id":250,"label":"FabricJS 1.5.0","selected":false},{"id":342,"label":"FabricJS 1.7.7","selected":false},{"id":378,"label":"FabricJS 1.7.15","selected":false},{"id":380,"label":"FabricJS 1.7.20","selected":false}]},{"name":"Glow","options":[]},{"name":"Inferno","options":[{"id":336,"label":"Inferno 1.0.0-beta9","selected":false}]},{"name":"JSBlocks","options":[{"id":252,"label":"JSBlocks (edge)","selected":false}]},{"name":"KineticJS","options":[{"id":124,"label":"KineticJS 4.0.5","selected":false},{"id":139,"label":"KineticJS 4.3.1","selected":false}]},{"name":"Knockout.js","options":[{"id":104,"label":"Knockout.js 2.0.0","selected":false},{"id":117,"label":"Knockout.js 2.1.0","selected":false},{"id":122,"label":"Knockout.js 2.2.1","selected":false},{"id":163,"label":"Knockout.js 2.3.0","selected":false},{"id":172,"label":"Knockout.js 3.0.0","selected":false},{"id":388,"label":"Knockout.js 3.4.2","selected":false}]},{"name":"Lo-Dash","options":[{"id":167,"label":"Lo-Dash 2.2.1","selected":false}]},{"name":"Minified","options":[{"id":164,"label":"Minified 1.0 beta1","selected":false}]},{"name":"MithrilJS","options":[{"id":273,"label":"MithrilJS 0.2.0","selected":false},{"id":390,"label":"MithrilJS 1.1.6","selected":false}]},{"name":"Mootools","options":[{"id":59,"label":"Mootools (nightly)","selected":false},{"id":62,"label":"Mootools 1.3.2","selected":false},{"id":63,"label":"Mootools 1.3.2 (compat)","selected":false},{"id":95,"label":"Mootools 1.4.5","selected":false},{"id":96,"label":"Mootools 1.4.5 (compat)","selected":false},{"id":216,"label":"Mootools 1.5.1","selected":false},{"id":263,"label":"Mootools 1.5.2","selected":false},{"id":329,"label":"Mootools 1.5.2 (compat)","selected":false},{"id":325,"label":"Mootools 1.6.0","selected":false},{"id":327,"label":"Mootools 1.6.0 (compat)","selected":false}]},{"name":"No-Library","options":[{"id":11,"label":"No-Library (pure JS)","selected":true}]},{"name":"OpenUI5","options":[{"id":271,"label":"OpenUI5 (latest, mobile)","selected":false}]},{"name":"Paper.js","options":[{"id":158,"label":"Paper.js 0.22","selected":false}]},{"name":"Pixi","options":[{"id":315,"label":"Pixi 3.0.11","selected":false},{"id":331,"label":"Pixi 4.0.0","selected":false}]},{"name":"Processing.js","options":[{"id":67,"label":"Processing.js 1.2.3","selected":false},{"id":81,"label":"Processing.js 1.3.6","selected":false},{"id":135,"label":"Processing.js 1.4.1","selected":false},{"id":206,"label":"Processing.js 1.4.7","selected":false}]},{"name":"Prototype","options":[{"id":4,"label":"Prototype 1.6.1.0","selected":false},{"id":265,"label":"Prototype 1.7.3","selected":false}]},{"name":"RactiveJS","options":[{"id":287,"label":"RactiveJS 0.7.3","selected":false}]},{"name":"Raphael","options":[{"id":30,"label":"Raphael 1.4","selected":false},{"id":36,"label":"Raphael 1.5.2","selected":false},{"id":76,"label":"Raphael 2.1.0","selected":false}]},{"name":"React","options":[{"id":159,"label":"React 0.3.2","selected":false},{"id":166,"label":"React 0.4.0","selected":false},{"id":184,"label":"React 0.8.0","selected":false},{"id":192,"label":"React 0.9.0","selected":false},{"id":285,"label":"React 0.14.3","selected":false}]},{"name":"RightJS","options":[{"id":45,"label":"RightJS 2.1.1","selected":false},{"id":136,"label":"RightJS 2.3.1","selected":false}]},{"name":"Riot","options":[{"id":382,"label":"Riot 3.7.4","selected":false}]},{"name":"Shipyard","options":[{"id":99,"label":"Shipyard (nightly)","selected":false},{"id":105,"label":"Shipyard 0.2","selected":false}]},{"name":"Thorax","options":[{"id":143,"label":"Thorax 2.0.0rc3","selected":false},{"id":174,"label":"Thorax 2.0.0rc6","selected":false}]},{"name":"Three.js","options":[{"id":82,"label":"Three.js r54","selected":false},{"id":399,"label":"Three.js 105","selected":false}]},{"name":"Underscore","options":[{"id":111,"label":"Underscore 1.3.3","selected":false},{"id":133,"label":"Underscore 1.4.3","selected":false},{"id":160,"label":"Underscore 1.4.4","selected":false},{"id":267,"label":"Underscore 1.8.3","selected":false}]},{"name":"Vue","options":[{"id":236,"label":"Vue (edge)","selected":false},{"id":289,"label":"Vue 1.0.12","selected":false},{"id":344,"label":"Vue 2.2.1","selected":false}]},{"name":"WebApp Install","options":[{"id":142,"label":"WebApp Install 0.1","selected":false}]},{"name":"XTK","options":[{"id":106,"label":"XTK edge","selected":false}]},{"name":"YUI","options":[{"id":9,"label":"YUI 2.8.0r4","selected":false},{"id":102,"label":"YUI 3.5.0","selected":false},{"id":118,"label":"YUI 3.6.0","selected":false},{"id":123,"label":"YUI 3.7.3","selected":false},{"id":130,"label":"YUI 3.8.0","selected":false},{"id":153,"label":"YUI 3.10.1","selected":false},{"id":182,"label":"YUI 3.14.0","selected":false},{"id":204,"label":"YUI 3.16.0","selected":false},{"id":230,"label":"YUI 3.17.2","selected":false}]},{"name":"Zepto","options":[{"id":90,"label":"Zepto 1.0rc1","selected":false}]},{"name":"jQuery","options":[{"id":46,"label":"jQuery (edge)","selected":false},{"id":131,"label":"jQuery 1.9.1","selected":false},{"id":248,"label":"jQuery 2.1.3","selected":false},{"id":319,"label":"jQuery 2.2.4","selected":false},{"id":376,"label":"jQuery 3.2.1","selected":false},{"id":384,"label":"jQuery 3.3.1","selected":false},{"id":401,"label":"jQuery 3.4.1","selected":false}]},{"name":"jQuery Slim","options":[{"id":407,"label":"jQuery Slim 3.2.1","selected":false},{"id":405,"label":"jQuery Slim 3.3.1","selected":false},{"id":403,"label":"jQuery Slim 3.4.1","selected":false}]},{"name":"jTypes","options":[{"id":165,"label":"jTypes 2.1.0","selected":false}]},{"name":"qooxdoo","options":[{"id":127,"label":"qooxdoo 2.0.3","selected":false},{"id":126,"label":"qooxdoo 2.1","selected":false}]},{"name":"svg.js","options":[{"id":395,"label":"svg.js 2.6.5","selected":false},{"id":393,"label":"svg.js 2.7.1","selected":false},{"id":391,"label":"svg.js 3.0.5","selected":false}]}],"dependencies":[],"values":{"jsLib":11,"normalizeCss":false}},"boilerplates":[{"name":"Tailwind Checkboxes","path":"/boilerplate/tailwind-css-checkboxes"},{"name":"Import a JS Module","path":"/boilerplate/module-import"},{"name":"jQuery","path":"/boilerplate/jquery"},{"name":"React + JSX","path":"/boilerplate/react-jsx"},{"name":"Preact","path":"/boilerplate/preact"},{"name":"TypeScript","path":"/boilerplate/typescript"},{"name":"CoffeeScript","path":"/boilerplate/coffeescript"},{"name":"SCSS","path":"/boilerplate/scss"},{"name":"CSS Grid","path":"/boilerplate/responsive-css-grid"},{"name":"Bootstrap","path":"/boilerplate/bootstrap"},{"name":"PostCSS","path":"/boilerplate/postcss"}],"header":{"proPath":"/pro/","title":"Create and display personal portfolio with projects","titlePlaceholder":"Untitled fiddle","description":"","expirationDays":180,"expirationOptions":[{"value":1,"label":"1 day","signedInOnly":false},{"value":10,"label":"10 days","signedInOnly":false},{"value":30,"label":" 1 month","signedInOnly":false},{"value":180,"label":"6 months","signedInOnly":false},{"value":365,"label":" 1 year","signedInOnly":true},{"value":null,"label":"Keep forever","signedInOnly":true}],"titleSuggestion":"👾 created this title suggestion for you","author":{"initials":"AN","tooltip":"Someone created this fiddle \u003cstrong\u003e2 minutes\u003c/strong\u003e ago","interactive":false}},"session":{"signedIn":false,"user":null,"paths":{"login":"/user/login/","signup":"/user/signup/","resetPassword":"/user/reset_password/","logout":"/user/logout/","pro":"/pro/","groups":"/user/collections/","newGroup":"/user/collections/new/","newGroupModal":"/user/collections/new/?modal=true","settings":"/user/settings/profile/","domains":"/user/settings/domains/","dashboard":"/user/fiddles/","fiddles":"/user/fiddles/all/"},"csrfToken":"nUEjrb4ubhhEuuHd9Gb2-dsfrRY_hYu0xO8Z7Sf7iQvVf_A_TBp-tZTVNamnvXfVjny1Kmm3iR8m9haNAFdPTQ"},"auth":{"recaptchaSiteKey":"6Ld-VIYoAAAAAFcXu3kzVsf5vYpU4gJbYH7t51gj","recaptchaAction":"signup"},"isAuthor":false,"spam":false,"sourceType":null,"show_boilerplates":true,"show_console":true,"show_changelog":true,"show_chat":false,"compiler":{"worker":"/vite-dist/compiler/worker-f757abd9.js","bundles":{"sass":"/vite-dist/compiler/sass-e8cc4f48.js","postcss":"/vite-dist/compiler/postcss-83b82ada.js","tailwind":"/vite-dist/compiler/tailwind-1c938e25.js","coffeescript1":"/vite-dist/compiler/coffeescript1-9692dfb9.js","coffeescript2":"/vite-dist/compiler/coffeescript2-cd98bedb.js","typescript":"/vite-dist/compiler/typescript-a1713574.js","babel":"/vite-dist/compiler/babel-8c2e99dd.js","babel6":"/vite-dist/compiler/babel6-dd057428.js","vue_sfc":"/vite-dist/compiler/vue_sfc-e019dd26.js","svelte":"/vite-dist/compiler/svelte-e2442269.js"},"languages":{"SCSS":{"bundle":"sass","compiler":"scss","input":"text"},"SASS":{"bundle":"sass","compiler":"sass","input":"text"},"PostCSS (Stage 0+)":{"bundle":"postcss","compiler":"postcss0","input":"text"},"PostCSS (Stage 3+)":{"bundle":"postcss","compiler":"postcss3","input":"text"},"Tailwind CSS":{"bundle":"tailwind","compiler":"tailwind","input":"tailwind"},"CoffeeScript":{"bundle":"coffeescript1","compiler":"coffeescript1","input":"text"},"CoffeeScript 2":{"bundle":"coffeescript2","compiler":"coffeescript2","input":"text"},"TypeScript":{"bundle":"typescript","compiler":"typescript","input":"text"},"Babel + JSX":{"bundle":"babel","compiler":"babel","input":"text"},"React":{"bundle":"babel6","compiler":"babel6","input":"babel6"},"Preact":{"bundle":"babel6","compiler":"babel6","input":"babel6"},"Vue SFC":{"bundle":"vue_sfc","compiler":"vue_sfc","input":"sfc"},"Svelte":{"bundle":"svelte","compiler":"svelte","input":"sfc"}},"patterns":{"babel_script":{"source":"text/(babel|jsx)","flags":"i"},"sfc_typescript":{"source":"\u003cscript\\b[^\u003e]*\\blang\\s*=\\s*[\"']?ts(?![\\w-])","flags":"i"},"sfc_sass":{"source":"\u003cstyle\\b[^\u003e]*\\blang\\s*=\\s*[\"']?(scss|sass)(?![\\w-])","flags":"i"}},"host":"jsfiddle.net"},"sidebar":{"brand":{"logoUrl":null,"homePath":"/","tagline":"JSFiddle - Test your React, Tailwind, JavaScript, CSS, HTML online with JSFiddle.","newFiddle":"Create a new fiddle"},"sections":{"yourFiddles":true,"versionHistory":true,"clips":true,"customDomain":true,"collections":true,"resources":true,"async":true,"miniApps":true},"clipsCount":0,"promotion":null,"miniApps":[{"id":"coderfonts","name":"Coder Fonts","path":"/coderfonts","href":"https://jsfiddle.net/coderfonts","modalId":"modal-coderfonts"},{"id":"cpg","name":"Color Palette Generator","path":"/color-palette-generator","href":"https://jsfiddle.net/color-palette-generator","modalId":"modal-cpg"},{"id":"flexbox","name":"CSS Flexbox Generator","path":"/css-flexbox-generator","href":"https://jsfiddle.net/css-flexbox-generator","modalId":"modal-flexbox"}],"collections":[],"customDomain":null},"flash":[],"bootstrap":{"whitelistRequirement":true,"autorun":false}},"i18n":{"modal":{"common":{"open_in_new_tab":"Open in a new tab"},"auth":{"login_title":"Welcome back","signup_title":"Create an account","login":"Your login","email":"E-mail address","username":"Username","password":"Password","log_in":"Log in","sign_up":"Create an account","working":"One moment...","need_account":"Need an account?","have_account":"Already have an account?","reset_password":"Reset password","terms_html":"By signing up you agree to our \u003ca href=\"/terms\" target=\"_blank\" rel=\"noopener\"\u003eterms\u003c/a\u003e and \u003ca href=\"/privacy\" target=\"_blank\" rel=\"noopener\"\u003eprivacy policy\u003c/a\u003e","logged_in":"Signed in as %{name}","greetings":{"default":["Welcome back, %{name}","Oh, it's %{name}, nice!","You're in, let's code","%{name} has entered the fiddle","Good to see you, %{name}","Right then, %{name}. Let's fiddle.","Ready when you are, %{name}","Signed in. Go break something."],"returning":["Long time no see, let's code","Finally, %{name} returns!","Look who's back — it's %{name}","%{name}! We were starting to worry.","It's been a while, %{name}. Welcome back."],"night_owl":["Late night, %{name}?","The bugs are asleep, %{name}. Now's your chance.","Burning the midnight oil, %{name}?"]},"signed_up":"Welcome to JSFiddle, %{name}","failed":"Could not reach the server. Please try again."},"add_group":{"title":"Add a new collection","subtitle":"Collect your fiddles in collections"},"cpg":{"title":"Color Palette Generator","subtitle":"Generate a cool color palette with a few clicks"},"flexbox":{"title":"CSS Flexbox Generator","subtitle":"Generate your CSS Flexbox layout in the simplest of ways"},"coderfonts":{"title":"Coder Fonts","subtitle":"Curated list of quality monospace fonts for coders"},"editor_settings":{"title":"Editor settings","subtitle":"Customize the behavior and feel of the editor","indent_with_spaces":"Indent with spaces","code_autocomplete":"Code autocomplete","color_swatches":"Color swatches","other_title":"Other","console_in_editor":"Console in the editor","device_preset_in_results":"Device Preset in Results","log_in_to_use_auto_running":"Log in to use auto-running","log_in_to_use_auto_saving":"Log in to use auto-saving","option_default":"Default","option_2_spaces":"2 spaces","option_4_spaces":"4 spaces"},"embed":{"title":"Share or embed fiddle","subtitle":"Customize the embeddable experience for websites","accent_color":"Accent color","font_color":"Font color","menu_background":"Menu background","code_background":"Code background"},"go_pro":{"title":"Join the 4+ million users, and keep the JSFiddle dream alive.","pages_title":"Get Fiddle Pages with PRO","companies_text":"JSFiddle is used by you and 4+ million other developers, in many companies ...","educational_text":"... and top educational institutions:","join_as_pro":"Join as PRO"},"panel_options":{"title":"Code panel options","subtitle":"Change code languages, preprocessors and plugins"},"whitelist":{"title":"Please \u003cstrong\u003eWhitelist\u003c/strong\u003e JSFiddle in your content blocker.","body":"Help keep JSFiddle free for always by one of two ways:","action1":"\u003cstrong class='whitelist'\u003eWhitelist JSFiddle\u003c/strong\u003e in your content blocker (two clicks)","action2":"and get access to additional PRO features →"},"version_history":{"title":"Version history","subtitle":"Every save is a version. Compare it with the editor, open it, or restore a single panel.","loading":"Loading versions…","error":"The versions could not be loaded.","retry":"Try again","load_more":"Load older versions","version":"Version %{number}","latest":"Latest","base":"Base","in_editor":"In editor","compare_with":"Compare with","against_editor":"The editor","against_previous":"The previous version","editor":"Editor","changed":"Changed","loading_version":"Loading the version…","version_error":"This version could not be loaded.","first_version":"This is the first version, there is nothing before it.","no_changes":"No changes","open":"Open version %{number}","restore":"Restore the %{panel} panel","restored":"%{panel} restored from version %{number}"},"clips":{"title":"Code clips","subtitle":"Your private code snippets. Pick one to insert it at the cursor.","loading":"Loading code clips…","error":"Your code clips could not be loaded.","retry":"Try again","empty_title":"No code clips yet","empty_desc":"Select code in any panel, then choose Create code clip.","insert_into":"Press Enter or click to insert into %{panel}","insert_into_own":"Press Enter or click to insert into the code clip’s own panel","create":"Create code clip","insert":"Insert code clip","title_placeholder":"Title (optional)","rename":"Rename","delete":"Delete","delete_confirm":"Delete this code clip? This cannot be undone.","saved":"Code clip saved","saved_as":"Code clip saved as “%{title}”","untitled":"Untitled clip","too_large":"Code clips can be up to 100 KB.","limit":"You have 500 code clips, the most you can keep. Delete some to add more.","guest_limit":"Guests can keep %{max} code clips in this browser. Log in to save new ones permanently.","failed":"That didn’t work. Please try again."},"your_fiddles":{"title":"Your recent fiddles","subtitle":"Recently created fiddles, including ones created while logged out","loading":"Loading your fiddles…","error":"Your fiddles could not be loaded.","retry":"Try again"}},"common":{"drafts":{"unsaved_changes":"This fiddle has previously unsaved changes.","apply_changes":"Apply changes","discard":"Discard"},"language":"Language","settings":"Settings","logout":"Logout","sign_in":"Sign in","new_group":"New collection","anonymous":"Anonymous"},"placeholders":{"no_fiddles_here":"No fiddles here","no_fiddles_desc":"Most recently saved fiddles will show here - no matter if you're logged in or out.\u003cbr\u003eIf you're logged out, they will disappear after a while."},"domains":{"sidebar_title":"Fiddle Pages","custom_path":"Custom path","vanity_placeholder":"docs-v2/intro","make_homepage":"Homepage","page_live_at":"Page live at","sidebar_hint_html":"Host your JSFiddle project under your own domain name.","sidebar_hint_example":"projectjs.io/docs-v2/intro","set_up_custom_domain_html":"Set up custom domain \u0026rarr;","save_first":"Save your fiddle first"},"editor":{"actions":{"run":"Run","run_fiddle":"Run fiddle","save":"Save fiddle","update":"Update","fork":"Fork fiddle into a new one","set_as_base":"Set this version as base","tidy":"Tidy the code with Prettify","collaborate":"Collaborate on this fiddle","embed":"Embed fiddle on websites/blogs","download":"Download fiddle","switch_theme":"Switch theme","editor_settings":"Editor settings","change_layout":"Change panels layout"},"chat":{"title":"Fiddler AI","toggle":"Fiddler AI","empty":"Ask for a change and the assistant will make it in the panels.","placeholder":"Ask for a change…","empty_new":"Describe what you want to build and the assistant will write it in the panels.","placeholder_new":"Describe what to build…","stop":"Stop","retry":"Retry","copy_code":"Copy","copied":"Copied","follow_ups":"Suggested next steps","usage":"$%{cost}","usage_cached":"%{percent}% of prompt tokens read from cache","context":"Context %{percent}% full - auto-compact is %{state}.","tip_context":"Context","tip_context_body":"%{tokens} of %{budget} tokens in the last request (%{percent}%).","tip_cache":"Cache","tip_cache_body":"%{cached} of %{prompt} prompt tokens read from cache (%{percent}%). Cached tokens are counted in full but billed at a fraction.","tip_cache_none":"None of the %{prompt} prompt tokens sent so far were read from cache.","tip_autocompact":"Auto-compact is %{state}.","tip_model_context":"%{tokens} tokens of context","tip_model_price":"$%{input} in / $%{output} out per 1M tokens","free":"Free","autocompact":"Auto-compact","autocompact_on":"on","autocompact_off":"off","thinking":"Thinking…","clear":"Clear conversation","settings":"Settings","close":"Close","pop_out":"Pop out into a floating window","collapse":"Collapse into a panel","model":"Model","one_step":"1 step","steps":"%{count} steps","tools_expand":"Show every step","tools_with":{"write_panel":"Writing %{detail}","read_panel":"Reading %{detail}","edit_panel":"Editing %{detail}","tidy_code":"Tidying %{detail}"},"tools":{"read_panel":"Reading code","edit_panel":"Editing code","write_panel":"Writing code","switch_language":"Switching language","focus_panel":"Focusing panel","run_fiddle":"Running fiddle","read_console":"Reading console","read_result":"Reading result","tidy_code":"Tidying code","set_title":"Setting title","save_fiddle":"Saving fiddle","fork_fiddle":"Forking fiddle"},"commands_label":"Commands","commands":{"run":"Run the fiddle","save":"Save the fiddle","clear":"Clear the conversation","compact":"Shrink the conversation to free up context","explain":"Explain how this fiddle works","fix":"Find and fix what's broken"},"arguments":{"explain":"part","fix":"problem"},"compacted":"Conversation compacted","compact_nothing":"Nothing to compact yet","effort":"Effort","efforts":{"low":"Low","medium":"Medium","high":"High"},"provider":"Provider","key_title":"Add your key","key_intro":"Fiddler AI needs your API key to work while in Beta.","your_key":"Your %{provider} API Key","save_key":"Save key","remove_key":"Remove key","get_api_key":"Get an API Key","too_short":"That key looks too short for %{provider}.","coming_soon":"Coming soon"},"header":{"collapse_sidebar":"Collapse sidebar","make_public":"Make this fiddle public","make_private":"Make this fiddle private","go_pro":"Go PRO"},"panels":{"result":"Result","tidy":"Tidy the code with Prettify","preview":{"title":"Preview width","full":"Full width","phone":"Phone","tablet":"Tablet","laptop":"Laptop","custom":"Custom"}},"embed":{"tabs":"Tabs","visual":"Visual","light":"Light","dark":"Dark","embed_snippet":"Embed snippet","prefer_iframe":"Prefer iframe?","use_script":"Use script","iframe_info":"\u003cp\u003e\u003cstrong\u003eNo autoresizing\u003c/strong\u003e to fit the code\u003c/p\u003e\u003cp\u003e\u003cstrong\u003eRender blocking\u003c/strong\u003e of the parent page\u003c/p\u003e"},"settings":{"theme":{"system":"System","dark":"Dark","light":"Light"},"general":"General","line_numbers":"Line numbers","wrap_lines":"Wrap lines","indent_with_tabs":"Indent with tabs","indent_size":"Indent size","font_size":"Font size","font_family":"Font family","behavior":"Behavior","auto_run_code":"Auto-run code","auto_run_validating":"Only auto-run code that validates","auto_save":"Auto-save code","clear_console":"Clear console on run","live_code_validation":"Live code validation","editor_layout":"Editor layout","classic":"Classic","columns":"Columns","bottom_results":"Bottom results","right_results":"Right results","tabs_columns":"Tabs (columns)","tabs_rows":"Tabs (rows)","chat_left":"Chat left","chat_bottom":"Chat bottom","code_hinting":"Code hinting (autocomplete)","hot_reload_css":"Hot reload CSS","hot_reload_html":"Hot reload HTML"},"popover":{"set_expiration":{"title":"Set fiddle expiration","signed_in_only":"Available for logged in users"},"js":{"frameworks":"Extensions","load_type":"Load type"},"css":{"options":"CSS Reset"}},"boilerplates":{"title":"Start with a boilerplate:"},"sidebar":{"vue_mode":"Vue Mode","svelte_mode":"Svelte Mode","user":{"dashboard":"Go to your Dashboard"},"your_recent_fiddles":{"title":"Your recent fiddles"},"clips":{"title":"Code clips"},"version_history":{"title":"Version history"},"meta":{"untitiled":"Untitled fiddle","no_description":"No description"},"resources":{"title":"Resources","type_name_from_cdn":"Type a library name to fetch from CDNJS","sfc_hint":"Single-file components import libraries by URL, e.g. import confetti from \"https://esm.sh/canvas-confetti\"."},"async":{"title":"Async requests","simulates_async_calls":"Simulating async requests:","see_docs":"See \u003ca href='https://jsfiddle.gitbook.io/help/async-requests' target='_new'\u003edocs\u003c/a\u003e for more info."},"other":{"title":"Other (links, license)","license":"License","license_body":"All code belongs to the poster and no license is enforced. JSFiddle or its authors are not responsible or liable for any loss or damage of any kind during the usage of provided code.","links":"Links"},"groups":{"title":"Collections","placeholder_value":"Add to collections","search_placeholder_value":"Search for collections","no_choices_text":"No more collections","no_results_text":"No collections found","item_select_text":"Press to select","you_have_no_groups":"You have no collections"},"author":{"title":"Author"},"toggle_sidebar":"Toggle sidebar"}}},"settings":{"defaults":{"layout":1,"themeMode":3,"tabSize":2,"matchBrackets":true,"lineNumbers":true,"wordWrap":true,"autoCloseTags":true,"autoCloseBrackets":true,"insertSpaces":true,"renderValidationDecorations":true,"autoRun":false,"autoRunValid":true,"autoSave":true,"clearConsole":false,"fontSize":12,"fontFamily":"Monaspace Argon","matchTags":false,"foldGutter":true,"quickSuggestions":true,"colorDecorators":true,"editorConsole":true,"hotreloadCss":true,"hotreloadHtml":false,"devicePreset":true},"stored":{}}}</script>
+
+    <link rel="icon" href="/img/favicon.png">
+
+    
+
+    <link rel="stylesheet" href="https://jsfiddle.net/vite-dist/assets/dist-editor-Ikc01AZu.css" />
+    
+    <script src="https://jsfiddle.net/vite-dist/assets/editor-mXYX4bJ7.js" crossorigin="" type="module"></script><link rel="modulepreload" href="https://jsfiddle.net/vite-dist/assets/sentry-DhvxY9Bg.js" as="script" crossorigin="">
+<link rel="modulepreload" href="https://jsfiddle.net/vite-dist/assets/bootstrap-42QTuegk.js" as="script" crossorigin="">
+<link rel="modulepreload" href="https://jsfiddle.net/vite-dist/assets/track-6hXC7bRV.js" as="script" crossorigin="">
+<link rel="modulepreload" href="https://jsfiddle.net/vite-dist/assets/rolldown-runtime-XKyaHtl9.js" as="script" crossorigin="">
+<link rel="modulepreload" href="https://jsfiddle.net/vite-dist/assets/defineProperty-BbfpZ9Tg.js" as="script" crossorigin="">
+<link rel="modulepreload" href="https://jsfiddle.net/vite-dist/assets/createApp-fug_Nb4f.js" as="script" crossorigin="">
+<link rel="modulepreload" href="https://jsfiddle.net/vite-dist/assets/recaptcha-QKVplycr.js" as="script" crossorigin="">
+<link rel="modulepreload" href="https://jsfiddle.net/vite-dist/assets/SelectMenu-DHlyeJeq.js" as="script" crossorigin=""><link rel="stylesheet" crossorigin="" href="https://jsfiddle.net/vite-dist/assets/editor-BB8B5D0w.css" />
+<link rel="stylesheet" crossorigin="" href="https://jsfiddle.net/vite-dist/assets/createApp--_9tkv_T.css" />
+<link rel="stylesheet" crossorigin="" href="https://jsfiddle.net/vite-dist/assets/SelectMenu-n8-zEbUG.css" />
+
+      <link rel="modulepreload" href="/vite-dist/assets/setup-DRwEhHAS.js" crossorigin>
+      <link rel="modulepreload" href="/vite-dist/assets/editor.api-B0EF8g-M.js" crossorigin>
+      <link rel="preload" as="style" href="/vite-dist/assets/setup-CjTUds3c.css">
+      <link rel="preload" as="style" href="/vite-dist/assets/editor-C_uBPuZw.css">
+
+
+
+    <title>Create and display personal portfolio with projects - JSFiddle - React, Tailwind, and code Playground</title>
+  </head>
+
+  <body class=" darkMode">
+    <div id="progressbar"><div class="pb"></div></div>
+
+    <div id="layout-container"><article class="ssrContent">
+  <h1>Create and display personal portfolio with projects</h1>
+
+
+
+    <section>
+      <h2>HTML</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;vi&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Ngô Nguyễn Thị Nguyên Nguyên - Portfolio&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav&gt;
+        &lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;MyPortfolio&lt;/a&gt;
+        &lt;div class=&quot;nav-links&quot;&gt;
+            &lt;a href=&quot;index.html&quot;&gt;Trang chủ&lt;/a&gt;
+            &lt;a href=&quot;about.html&quot;&gt;Giới thiệu&lt;/a&gt;
+            &lt;a href=&quot;contact.html&quot;&gt;Liên hệ&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;header&gt;
+        &lt;img src=&quot;images/avatar.jpg&quot; alt=&quot;Ảnh chân dung cá nhân&quot; class=&quot;avatar&quot;&gt;
+        &lt;h1&gt;Xin chào! Mình là Ngô Nguyễn Thị Nguyên Nguyên&lt;/h1&gt;
+        &lt;p&gt;Full-stack Developer tương lai&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;section&gt;
+        &lt;h2&gt;Dự án nổi bật&lt;/h2&gt;
+        &lt;div class=&quot;project&quot;&gt;Todo List JS&lt;/div&gt;
+        &lt;div class=&quot;project&quot;&gt;Weather App&lt;/div&gt;
+        &lt;div class=&quot;project&quot;&gt;Portfolio này :)&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;script src=&quot;js/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+</article>
+</div>
+
+    <form method="post" id="fiddle-payload" target="result" action="https://fiddle.jshell.net/_display/" autocomplete="off" hidden></form>
+
+    <div id="server-rendered" style="display: none">
+        <div id="sponsor-slot" data-provider="ethical">
+<div class="twitterCont" data-carbon-src="//cdn.carbonads.com/carbon.js?serve=CW7DC2JY&amp;placement=jsfiddlenet&amp;format=cover">
+    <!-- <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=jsfiddlenet" id="_carbonads_js"></script> -->
+    <!-- <script type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIEKQ7&placement=jsfiddlenet" id="_carbonads_js"></script> -->
+    <!-- demo cover: CWYIC2QJ \ demo classic: C6AILKT \ live: CW7DC2JY -->
+
+  <div id="ethical-sponsor" data-ea-publisher="jsfiddlenet" data-ea-verbosity="quiet"></div>
+
+    <script async type="text/javascript" src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+</div>
+
+<style id="temp-ad">
+</style>
+
+<script>
+
+let tempad = ``
+
+if (window.location.hash != "#nostyle"){
+  //let style = document.querySelector('#temp-ad')
+  //style.innerHTML = tempad
+}
+
+</script>
+
+<style>
+  #sidebar #carbon-responsive .carbon-responsive-wrap {
+    border: 0
+  }
+
+  #carbon-responsive .carbon-poweredby,
+  #carbon-cover .carbon-footer {
+    display: none;
+  }
+
+  #carbon-responsive .carbon-text {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #carbon-responsive .carbon-responsive-wrap {
+    background-color: initial;
+    border: initial;
+  }
+
+  #carbon-responsive a, #carbon-responsive a:hover {
+    color: inherit;
+  }
+
+  #carbon-responsive .carbon-poweredby {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: .2ch;
+    border-left: solid 1px var(--common-border);
+    border-bottom: solid 1px var(--common-border);
+    border-bottom-left-radius: 3px;
+    padding: 1ex 1.5ch;
+  }
+
+  #carbon-cover>a:first-child {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  #carbon-cover a .carbon-large-image,
+  #carbon-cover a:hover .carbon-large-image {
+    width: 35% !important;
+  }
+
+  #carbon-cover a:hover .carbon-large-image {
+    width: 100% !important;
+  }
+
+  #carbon-cover .carbon-tagline {
+    max-inline-size: initial;
+  }
+
+  #carbon-cover .carbon-text {
+    height: initial;
+  }
+
+  #carbon-cover .carbon-logo img {
+    width: 40%;
+  }
+
+  #carbon-cover .carbon-description {
+    height: 0;
+  }
+
+  #carbon-cover:hover .carbon-description {
+    height: initial;
+    margin-bottom: 1em;
+  }
+
+  #carbon-cover .carbon-footer {
+    margin: 1ex 1ch;
+    max-width: max-content;
+  }
+</style></div>
+        <div id="modal-whitelist-content"><main>
+  <h2>Please <strong>Whitelist</strong> JSFiddle in your content blocker.</h2>
+
+  <div class="helpCont">
+    <p>Help keep JSFiddle free for always by one of two ways:</p>
+    <ul>
+      <li><strong class='whitelist'>Whitelist JSFiddle</strong> in your content blocker (two clicks)</li>
+      <li><a href="/pro/" target="_blank">Go PRO</a> and get access to additional PRO features →</li>
+    </ul>
+  </div>
+</main>
+
+<aside>
+  <ul class="perks">
+  <li>
+    <em>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18.9905 19H19M18.9905 19C18.3678 19.6175 17.2393 19.4637 16.4479 19.4637C15.4765 19.4637 15.0087 19.6537 14.3154 20.347C13.7251 20.9374 12.9337 22 12 22C11.0663 22 10.2749 20.9374 9.68457 20.347C8.99128 19.6537 8.52349 19.4637 7.55206 19.4637C6.76068 19.4637 5.63218 19.6175 5.00949 19C4.38181 18.3776 4.53628 17.2444 4.53628 16.4479C4.53628 15.4414 4.31616 14.9786 3.59938 14.2618C2.53314 13.1956 2.00002 12.6624 2 12C2.00001 11.3375 2.53312 10.8044 3.59935 9.73817C4.2392 9.09832 4.53628 8.46428 4.53628 7.55206C4.53628 6.76065 4.38249 5.63214 5 5.00944C5.62243 4.38178 6.7556 4.53626 7.55208 4.53626C8.46427 4.53626 9.09832 4.2392 9.73815 3.59937C10.8044 2.53312 11.3375 2 12 2C12.6625 2 13.1956 2.53312 14.2618 3.59937C14.9015 4.23907 15.5355 4.53626 16.4479 4.53626C17.2393 4.53626 18.3679 4.38247 18.9906 5C19.6182 5.62243 19.4637 6.75559 19.4637 7.55206C19.4637 8.55858 19.6839 9.02137 20.4006 9.73817C21.4669 10.8044 22 11.3375 22 12C22 12.6624 21.4669 13.1956 20.4006 14.2618C19.6838 14.9786 19.4637 15.4414 19.4637 16.4479C19.4637 17.2444 19.6182 18.3776 18.9905 19Z" />
+        <path d="M9 12.8929C9 12.8929 10.2 13.5447 10.8 14.5C10.8 14.5 12.6 10.75 15 9.5" />
+      </svg>
+    </em>
+    <section>
+      <h3>Ad-free</h3>
+      <p>All ads in the editor and listing pages are turned completely off.</p>
+    </section>
+  </li>
+  <li>
+    <em>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.49609 9L20.4961 9" />
+        <path d="M18.25 5.8125V6M18.5 6C18.5 6.13807 18.3881 6.25 18.25 6.25C18.1119 6.25 18 6.13807 18 6C18 5.86193 18.1119 5.75 18.25 5.75C18.3881 5.75 18.5 5.86193 18.5 6Z" />
+        <path d="M15.25 5.8125V6M15.5 6C15.5 6.13807 15.3881 6.25 15.25 6.25C15.1119 6.25 15 6.13807 15 6C15 5.86193 15.1119 5.75 15.25 5.75C15.3881 5.75 15.5 5.86193 15.5 6Z" />
+        <path d="M12.25 5.8125V6M12.5 6C12.5 6.13807 12.3881 6.25 12.25 6.25C12.1119 6.25 12 6.13807 12 6C12 5.86193 12.1119 5.75 12.25 5.75C12.3881 5.75 12.5 5.86193 12.5 6Z" />
+        <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" />
+      </svg>
+    </em>
+    <section>
+      <h3>Fiddle Pages</h3>
+      <p>Your fiddles accessible under a custom domain and a vanity path - the simplest hosting for your personal project.</p>
+    </section>
+  </li>
+  <li>
+    <em>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15.8785 3L10.2827 3C7.32099 3 5.84015 3 4.92007 3.87868C4 4.75736 4 6.17157 4 9L4.10619 15L15.8785 15C18.1016 15 19.2131 15 19.6847 14.4255C19.8152 14.2666 19.9108 14.0841 19.9656 13.889C20.1639 13.184 19.497 12.3348 18.1631 10.6364L18.1631 10.6364C17.6083 9.92985 17.3309 9.57659 17.2814 9.1751C17.2671 9.05877 17.2671 8.94123 17.2814 8.8249C17.3309 8.42341 17.6083 8.07015 18.1631 7.36364L18.1631 7.36364C19.497 5.66521 20.1639 4.816 19.9656 4.11098C19.9108 3.91591 19.8152 3.73342 19.6847 3.57447C19.2131 3 18.1016 3 15.8785 3L15.8785 3Z" />
+        <path d="M4 21L4 8" />
+      </svg>
+    </em>
+    <section>
+      <h3>Use pre-released features</h3>
+      <p>You get to try and use features (like the Palette Color Generator) months before everyone else.</p>
+    </section>
+  </li>
+  <li>
+    <em>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16.9017 6.12874C18 7.25748 18 9.07416 18 12.7075V14.2925C18 17.9258 18 19.7425 16.9017 20.8713C15.8033 22 14.0355 22 10.5 22C6.96447 22 5.1967 22 4.09835 20.8713C3 19.7425 3 17.9258 3 14.2925V12.7075C3 9.07416 3 7.25748 4.09835 6.12874C5.1967 5 6.96447 5 10.5 5C14.0355 5 15.8033 5 16.9017 6.12874Z" />
+        <path d="M7.5 5.5V10.3693C7.5 11.3046 7.5 11.7722 7.78982 11.9396C8.35105 12.2638 9.4038 11.1823 9.90375 10.8567C10.1937 10.6678 10.3387 10.5734 10.5 10.5734C10.6613 10.5734 10.8063 10.6678 11.0962 10.8567C11.5962 11.1823 12.6489 12.2638 13.2102 11.9396C13.5 11.7722 13.5 11.3046 13.5 10.3693V5.5" />
+        <path d="M9 2H11C15.714 2 18.0711 2 19.5355 3.46447C21 4.92893 21 7.28595 21 12V18" />
+      </svg>
+    </em>
+    <section>
+      <h3>Fiddle collections</h3>
+      <p>Sort and categorize your Fiddles into multiple collections.</p>
+    </section>
+  </li>
+  <li>
+    <em>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4.26781 18.8447C4.49269 20.515 5.87613 21.8235 7.55966 21.9009C8.97627 21.966 10.4153 22 12 22C13.5847 22 15.0237 21.966 16.4403 21.9009C18.1239 21.8235 19.5073 20.515 19.7322 18.8447C19.879 17.7547 20 16.6376 20 15.5C20 14.3624 19.879 13.2453 19.7322 12.1553C19.5073 10.485 18.1239 9.17649 16.4403 9.09909C15.0237 9.03397 13.5847 9 12 9C10.4153 9 8.97627 9.03397 7.55966 9.09909C5.87613 9.17649 4.49269 10.485 4.26781 12.1553C4.12105 13.2453 4 14.3624 4 15.5C4 16.6376 4.12105 17.7547 4.26781 18.8447Z" />
+        <path d="M7.5 9V6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5V9" />
+        <path d="M12.125 15.5H12M12.25 15.5C12.25 15.6381 12.1381 15.75 12 15.75C11.8619 15.75 11.75 15.6381 11.75 15.5C11.75 15.3619 11.8619 15.25 12 15.25C12.1381 15.25 12.25 15.3619 12.25 15.5Z" />
+        <path d="M8.125 15.5H8M8.25 15.5C8.25 15.6381 8.13807 15.75 8 15.75C7.86193 15.75 7.75 15.6381 7.75 15.5C7.75 15.3619 7.86193 15.25 8 15.25C8.13807 15.25 8.25 15.3619 8.25 15.5Z" />
+        <path d="M16.125 15.5H16M16.25 15.5C16.25 15.6381 16.1381 15.75 16 15.75C15.8619 15.75 15.75 15.6381 15.75 15.5C15.75 15.3619 15.8619 15.25 16 15.25C16.1381 15.25 16.25 15.3619 16.25 15.5Z" />
+      </svg>
+    </em>
+    <section>
+      <h3>Private collections and fiddles</h3>
+      <p>You can make as many Private Fiddles, and Private Collections as you wish!</p>
+    </section>
+  </li>
+</ul>
+
+
+  <div class="proActionCont">
+    <ul>
+  <li><label><input type="radio" name="payment_type_whitelist" value="monthly" checked>Monthly</label></li>
+  <li><label><input type="radio" name="payment_type_whitelist" value="one_time">One-time (1 year)</label></li>
+</ul>
+  <a href="/user/login/?return_to=%2Fpro%2F" class="button proSwitch_monthly">Join JSFiddle PRO <span id='amount-mode'>(&euro;8 per month)</span></a>
+  <a href="/user/login/?return_to=%2Fpro%2F" class="button proSwitch_one_time">Buy JSFiddle PRO <span id='amount-mode'>(One-time &euro;80 for 1 year)</span></a>
+
+  </div> <!-- /proActionCont -->
+</aside>
+</div>
+        <div id="modal-pro-content">
+          <script type="text/javascript" src="https://unpkg.com/external-svg-loader@1.7.1/dist/svg-loader.min.js" async></script>
+          <main>
+  <h2>Join the 4+ million users, and keep the JSFiddle dream alive.</h2>
+
+  <ul class="perks">
+  <li>
+    <em>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18.9905 19H19M18.9905 19C18.3678 19.6175 17.2393 19.4637 16.4479 19.4637C15.4765 19.4637 15.0087 19.6537 14.3154 20.347C13.7251 20.9374 12.9337 22 12 22C11.0663 22 10.2749 20.9374 9.68457 20.347C8.99128 19.6537 8.52349 19.4637 7.55206 19.4637C6.76068 19.4637 5.63218 19.6175 5.00949 19C4.38181 18.3776 4.53628 17.2444 4.53628 16.4479C4.53628 15.4414 4.31616 14.9786 3.59938 14.2618C2.53314 13.1956 2.00002 12.6624 2 12C2.00001 11.3375 2.53312 10.8044 3.59935 9.73817C4.2392 9.09832 4.53628 8.46428 4.53628 7.55206C4.53628 6.76065 4.38249 5.63214 5 5.00944C5.62243 4.38178 6.7556 4.53626 7.55208 4.53626C8.46427 4.53626 9.09832 4.2392 9.73815 3.59937C10.8044 2.53312 11.3375 2 12 2C12.6625 2 13.1956 2.53312 14.2618 3.59937C14.9015 4.23907 15.5355 4.53626 16.4479 4.53626C17.2393 4.53626 18.3679 4.38247 18.9906 5C19.6182 5.62243 19.4637 6.75559 19.4637 7.55206C19.4637 8.55858 19.6839 9.02137 20.4006 9.73817C21.4669 10.8044 22 11.3375 22 12C22 12.6624 21.4669 13.1956 20.4006 14.2618C19.6838 14.9786 19.4637 15.4414 19.4637 16.4479C19.4637 17.2444 19.6182 18.3776 18.9905 19Z" />
+        <path d="M9 12.8929C9 12.8929 10.2 13.5447 10.8 14.5C10.8 14.5 12.6 10.75 15 9.5" />
+      </svg>
+    </em>
+    <section>
+      <h3>Ad-free</h3>
+      <p>All ads in the editor and listing pages are turned completely off.</p>
+    </section>
+  </li>
+  <li>
+    <em>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.49609 9L20.4961 9" />
+        <path d="M18.25 5.8125V6M18.5 6C18.5 6.13807 18.3881 6.25 18.25 6.25C18.1119 6.25 18 6.13807 18 6C18 5.86193 18.1119 5.75 18.25 5.75C18.3881 5.75 18.5 5.86193 18.5 6Z" />
+        <path d="M15.25 5.8125V6M15.5 6C15.5 6.13807 15.3881 6.25 15.25 6.25C15.1119 6.25 15 6.13807 15 6C15 5.86193 15.1119 5.75 15.25 5.75C15.3881 5.75 15.5 5.86193 15.5 6Z" />
+        <path d="M12.25 5.8125V6M12.5 6C12.5 6.13807 12.3881 6.25 12.25 6.25C12.1119 6.25 12 6.13807 12 6C12 5.86193 12.1119 5.75 12.25 5.75C12.3881 5.75 12.5 5.86193 12.5 6Z" />
+        <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" />
+      </svg>
+    </em>
+    <section>
+      <h3>Fiddle Pages</h3>
+      <p>Your fiddles accessible under a custom domain and a vanity path - the simplest hosting for your personal project.</p>
+    </section>
+  </li>
+  <li>
+    <em>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15.8785 3L10.2827 3C7.32099 3 5.84015 3 4.92007 3.87868C4 4.75736 4 6.17157 4 9L4.10619 15L15.8785 15C18.1016 15 19.2131 15 19.6847 14.4255C19.8152 14.2666 19.9108 14.0841 19.9656 13.889C20.1639 13.184 19.497 12.3348 18.1631 10.6364L18.1631 10.6364C17.6083 9.92985 17.3309 9.57659 17.2814 9.1751C17.2671 9.05877 17.2671 8.94123 17.2814 8.8249C17.3309 8.42341 17.6083 8.07015 18.1631 7.36364L18.1631 7.36364C19.497 5.66521 20.1639 4.816 19.9656 4.11098C19.9108 3.91591 19.8152 3.73342 19.6847 3.57447C19.2131 3 18.1016 3 15.8785 3L15.8785 3Z" />
+        <path d="M4 21L4 8" />
+      </svg>
+    </em>
+    <section>
+      <h3>Use pre-released features</h3>
+      <p>You get to try and use features (like the Palette Color Generator) months before everyone else.</p>
+    </section>
+  </li>
+  <li>
+    <em>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16.9017 6.12874C18 7.25748 18 9.07416 18 12.7075V14.2925C18 17.9258 18 19.7425 16.9017 20.8713C15.8033 22 14.0355 22 10.5 22C6.96447 22 5.1967 22 4.09835 20.8713C3 19.7425 3 17.9258 3 14.2925V12.7075C3 9.07416 3 7.25748 4.09835 6.12874C5.1967 5 6.96447 5 10.5 5C14.0355 5 15.8033 5 16.9017 6.12874Z" />
+        <path d="M7.5 5.5V10.3693C7.5 11.3046 7.5 11.7722 7.78982 11.9396C8.35105 12.2638 9.4038 11.1823 9.90375 10.8567C10.1937 10.6678 10.3387 10.5734 10.5 10.5734C10.6613 10.5734 10.8063 10.6678 11.0962 10.8567C11.5962 11.1823 12.6489 12.2638 13.2102 11.9396C13.5 11.7722 13.5 11.3046 13.5 10.3693V5.5" />
+        <path d="M9 2H11C15.714 2 18.0711 2 19.5355 3.46447C21 4.92893 21 7.28595 21 12V18" />
+      </svg>
+    </em>
+    <section>
+      <h3>Fiddle collections</h3>
+      <p>Sort and categorize your Fiddles into multiple collections.</p>
+    </section>
+  </li>
+  <li>
+    <em>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4.26781 18.8447C4.49269 20.515 5.87613 21.8235 7.55966 21.9009C8.97627 21.966 10.4153 22 12 22C13.5847 22 15.0237 21.966 16.4403 21.9009C18.1239 21.8235 19.5073 20.515 19.7322 18.8447C19.879 17.7547 20 16.6376 20 15.5C20 14.3624 19.879 13.2453 19.7322 12.1553C19.5073 10.485 18.1239 9.17649 16.4403 9.09909C15.0237 9.03397 13.5847 9 12 9C10.4153 9 8.97627 9.03397 7.55966 9.09909C5.87613 9.17649 4.49269 10.485 4.26781 12.1553C4.12105 13.2453 4 14.3624 4 15.5C4 16.6376 4.12105 17.7547 4.26781 18.8447Z" />
+        <path d="M7.5 9V6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5V9" />
+        <path d="M12.125 15.5H12M12.25 15.5C12.25 15.6381 12.1381 15.75 12 15.75C11.8619 15.75 11.75 15.6381 11.75 15.5C11.75 15.3619 11.8619 15.25 12 15.25C12.1381 15.25 12.25 15.3619 12.25 15.5Z" />
+        <path d="M8.125 15.5H8M8.25 15.5C8.25 15.6381 8.13807 15.75 8 15.75C7.86193 15.75 7.75 15.6381 7.75 15.5C7.75 15.3619 7.86193 15.25 8 15.25C8.13807 15.25 8.25 15.3619 8.25 15.5Z" />
+        <path d="M16.125 15.5H16M16.25 15.5C16.25 15.6381 16.1381 15.75 16 15.75C15.8619 15.75 15.75 15.6381 15.75 15.5C15.75 15.3619 15.8619 15.25 16 15.25C16.1381 15.25 16.25 15.3619 16.25 15.5Z" />
+      </svg>
+    </em>
+    <section>
+      <h3>Private collections and fiddles</h3>
+      <p>You can make as many Private Fiddles, and Private Collections as you wish!</p>
+    </section>
+  </li>
+</ul>
+
+</main>
+<aside>
+  <div class="brandsCont">
+    <p>JSFiddle is used by you and 4+ million other developers, in many companies ...</p>
+
+    <div class="segment">
+      <svg data-src="/svg/logo1.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo2.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo3.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo4.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo5.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo6.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo7.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo8.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo9.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo10.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo11.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo12.svg" data-loading="lazy" height="30"></svg>
+    </div> <!-- /segment -->
+
+    <p>... and top educational institutions:</p>
+
+    <div class="segment edu">
+      <svg data-src="/svg/edu1.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/edu2.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/edu3.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/edu4.svg" data-loading="lazy" height="30"></svg>
+    </div> <!-- /segment.edu -->
+  </div> <!-- /brandsCont -->
+
+  <div class="proActionCont">
+    <ul>
+  <li><label><input type="radio" name="payment_type" value="monthly" checked>Monthly</label></li>
+  <li><label><input type="radio" name="payment_type" value="one_time">One-time (1 year)</label></li>
+</ul>
+  <a href="/user/login/?return_to=%2Fpro%2F" class="button proSwitch_monthly">Join JSFiddle PRO <span id='amount-mode'>(&euro;8 per month)</span></a>
+  <a href="/user/login/?return_to=%2Fpro%2F" class="button proSwitch_one_time">Buy JSFiddle PRO <span id='amount-mode'>(One-time &euro;80 for 1 year)</span></a>
+
+  </div> <!-- /proActionCont -->
+</aside>
+
+
+        </div>
+        <div id="modal-pro-pages-content"><main>
+  <div class="proVideo">
+    <video src="/img/fiddle-pages.mp4" muted loop playsinline preload="none"></video>
+  </div>
+
+  <h2>Get Fiddle Pages with PRO</h2>
+  <p class="pagesSubtitle">Your fiddles accessible under a custom domain and a vanity path - the simplest hosting for your personal project.</p>
+</main>
+<aside>
+  <div class="brandsCont">
+    <p>JSFiddle is used by you and 4+ million other developers, in many companies ...</p>
+
+    <div class="segment">
+      <svg data-src="/svg/logo1.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo2.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo3.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo4.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo5.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo6.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo7.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo8.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo9.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo10.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo11.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/logo12.svg" data-loading="lazy" height="30"></svg>
+    </div> <!-- /segment -->
+
+    <p>... and top educational institutions:</p>
+
+    <div class="segment edu">
+      <svg data-src="/svg/edu1.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/edu2.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/edu3.svg" data-loading="lazy" height="30"></svg>
+      <svg data-src="/svg/edu4.svg" data-loading="lazy" height="30"></svg>
+    </div> <!-- /segment.edu -->
+  </div> <!-- /brandsCont -->
+
+  <div class="proActionCont">
+    <ul>
+  <li><label><input type="radio" name="payment_type_pages" value="monthly" checked>Monthly</label></li>
+  <li><label><input type="radio" name="payment_type_pages" value="one_time">One-time (1 year)</label></li>
+</ul>
+  <a href="/user/login/?return_to=%2Fpro%2F" class="button proSwitch_monthly">Join JSFiddle PRO <span id='amount-mode'>(&euro;8 per month)</span></a>
+  <a href="/user/login/?return_to=%2Fpro%2F" class="button proSwitch_one_time">Buy JSFiddle PRO <span id='amount-mode'>(One-time &euro;80 for 1 year)</span></a>
+
+  </div> <!-- /proActionCont -->
+</aside>
+
+</div>
+    </div>
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareSourceCode","@id":"https://jsfiddle.net/23ng9mp6/1/#fiddle","name":"Create and display personal portfolio with projects","description":"Create and display personal portfolio with projects - a HTML example you can edit and run in your browser on JSFiddle.","url":"https://jsfiddle.net/23ng9mp6/1/","dateCreated":"2026-11-23T11:15:45Z","datePublished":"2026-11-23T11:15:45Z","inLanguage":"en","isAccessibleForFree":true,"runtimePlatform":"Web browser","codeSampleType":"full solution","programmingLanguage":["HTML"],"publisher":{"@id":"https://jsfiddle.net/#organization"},"hasPart":[{"@type":"SoftwareSourceCode","name":"HTML","programmingLanguage":"HTML","codeSampleType":"code snippet","text":"\u003c!DOCTYPE html\u003e\r\n\u003chtml lang=\"vi\"\u003e\r\n\u003chead\u003e\r\n    \u003cmeta charset=\"UTF-8\"\u003e\r\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\r\n    \u003ctitle\u003eNgô Nguyễn Thị Nguyên Nguyên - Portfolio\u003c/title\u003e\r\n    \u003clink rel=\"stylesheet\" href=\"css/style.css\"\u003e\r\n\u003c/head\u003e\r\n\u003cbody\u003e\r\n    \u003cnav\u003e\r\n        \u003ca href=\"index.html\" class=\"logo\"\u003eMyPortfolio\u003c/a\u003e\r\n        \u003cdiv class=\"nav-links\"\u003e\r\n            \u003ca href=\"index.html\"\u003eTrang chủ\u003c/a\u003e\r\n            \u003ca href=\"about.html\"\u003eGiới thiệu\u003c/a\u003e\r\n            \u003ca href=\"contact.html\"\u003eLiên hệ\u003c/a\u003e\r\n        \u003c/div\u003e\r\n    \u003c/nav\u003e\r\n\r\n    \u003cheader\u003e\r\n        \u003cimg src=\"images/avatar.jpg\" alt=\"Ảnh chân dung cá nhân\" class=\"avatar\"\u003e\r\n        \u003ch1\u003eXin chào! Mình là Ngô Nguyễn Thị Nguyên Nguyên\u003c/h1\u003e\r\n        \u003cp\u003eFull-stack Developer tương lai\u003c/p\u003e\r\n    \u003c/header\u003e\r\n\r\n    \u003csection\u003e\r\n        \u003ch2\u003eDự án nổi bật\u003c/h2\u003e\r\n        \u003cdiv class=\"project\"\u003eTodo List JS\u003c/div\u003e\r\n        \u003cdiv class=\"project\"\u003eWeather App\u003c/div\u003e\r\n        \u003cdiv class=\"project\"\u003ePortfolio này :)\u003c/div\u003e\r\n    \u003c/section\u003e\r\n\r\n    \u003cscript src=\"js/script.js\"\u003e\u003c/script\u003e\r\n\u003c/body\u003e\r\n\u003c/html\u003e"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"JSFiddle","item":"https://jsfiddle.net/"},{"@type":"ListItem","position":2,"name":"Create and display personal portfolio with projects","item":"https://jsfiddle.net/23ng9mp6/1/"}]},{"@type":"Organization","@id":"https://jsfiddle.net/#organization","name":"JSFiddle","url":"https://jsfiddle.net/","logo":"https://jsfiddle.net/img/logo-512.png"}]}</script>
+
+
+      <script async src="//m.servedby-buysellads.com/monetization.js" type="text/javascript" onload="window._bsa && _bsa.init('stickybox', 'CKYD52JI', 'placement:jsfiddlenet-custom')"></script>
+
+    
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"0ab02cedda344e8e92c485f151ebe080","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
